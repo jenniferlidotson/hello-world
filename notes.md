@@ -11,3 +11,6 @@ Here are my notes
 Let's make a conflict
 
 Gituations are fun
+Demostrating gituations
+
+A gituation is a git-conflict
