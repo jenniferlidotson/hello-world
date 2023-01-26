@@ -1,4 +1,4 @@
-let usersName = prompt("Aloha! What's' your first name?"); 
+let usersName = prompt ("Aloha! What's' your first name?"); 
 console.log(userName);
 document.write("Aloha" + userName);
 
@@ -12,7 +12,7 @@ document.write("We're glad you love the ocean! Join us in the water!");
 }else {
 document.write("Even if you don't love the ocean! You can learn more here!");
 
-if (confirm("Would you like to enter this website?")) {
+if (confirm("Would you like to enter this website?")){
 document.write("Awesome!");
 
 }else {
