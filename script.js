@@ -3,7 +3,7 @@ console.log("hello-world")
 function userGreeting() {
     userName = prompt("Aloha! What's' your first name?");
     console.log(userName);
-    document.write("Aloha " + userName+"!" "We're glad you love Stand Up Paddle Boarding! ");
+    document.write("Aloha " + userName+"! " "We're glad you love Stand Up Paddle Boarding! ");
     return userName;
 }
 
