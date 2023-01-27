@@ -26,28 +26,16 @@ function loveConfirm() {
 }
     loveConfirm();
 
-function manyPicture() {
-    let number = prompt("Pick a magic number between 1 to 3");
-
-    if (number == 1) {
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        console.log(number);
-
-    } else if (number == 2) {
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        console.log(number);
-
-    } else if (number == 3) {
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        document.write("<img src='SUPlogo.png' width = '100px'></img>");
-        console.log(number);
-
-    } else { 
-        manyPicture();
-        console.log(number);
+    function  manyPicture() {
+        let number = prompt("Pick a magic number between 1 to 3");
+        while (number < 1 || number >3) {
+            number = prompt("Pick a magic number between 1 to 3");
+        
+        }
+        
+        for (let i = 0; i < number; i++ ){
+        document.write("<img src='SUPlogo.png' width ='100px'>")
+        
+        }
     }
-   
-}
-manyPicture();
+    manyPicture();
