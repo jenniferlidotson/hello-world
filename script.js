@@ -1,9 +1,9 @@
 console.log("hello-world")
 
 function userGreeting() {
-    userName = prompt("Aloha! What's' your first name?");
+    userName = prompt("Aloha! What's your first name?");
     console.log(userName);
-    document.write("Aloha " + userName+"! " "We're glad you love Stand Up Paddle Boarding! ");
+    document.write("Aloha " + userName+"! ");
     return userName;
 }
 
@@ -30,18 +30,18 @@ function manyPicture() {
     let number = prompt("Pick a magic number between 1 to 3");
 
     if (number == 1) {
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
         console.log(number);
 
     } else if (number == 2) {
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
         console.log(number);
 
     } else if (number == 3) {
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
-        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
+        document.write("<img src='SUPlogo.png' width = '100px'></img>");
         console.log(number);
 
     } else { 
