@@ -1,22 +1,53 @@
 console.log("hello-world")
 
-let userName = prompt("Aloha! What's' your first name?");
-console.log(userName);
-document.write("Aloha " + userName+"! ");
-
-let userInput = prompt("Do you love the ocean? yes or no.");
-console.log(userInput);
-let myAnswer = "yes";
-
-if (userInput == myAnswer) {
-    document.write("We're glad you love the ocean! Join us in the water! ");
-
-} else {
-    document.write("Even if you don't love the ocean, you can learn more here. ");
+function userGreeting() {
+    userName = prompt("Aloha! What's' your first name?");
+    console.log(userName);
+    document.write("Aloha " + userName+"!" "We're glad you love Stand Up Paddle Boarding! ");
+    return userName;
 }
-if (confirm("Would you like to enter this website?")) {
-    document.write(" Awesome!");
 
-} else {
-    document.write("No worries!");
+userGreeting();
+
+alert("You must love Stand Up Paddle Boarding to view this website");
+
+function loveConfirm() {
+    let love = prompt("Do you love Stand Up Paddle Boarding? yes or no.");
+
+    if (love) {
+        while (love.toLowerCase() !== "yes") {
+            loveConfirm();
+            console.log(love);
+            return love;
+        }
+    } else { 
+        loveConfirm();
+    }
 }
+    loveConfirm();
+
+function manyPicture() {
+    let number = prompt("Pick a magic number between 1 to 3");
+
+    if (number == 1) {
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        console.log(number);
+
+    } else if (number == 2) {
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        console.log(number);
+
+    } else if (number == 3) {
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        document.write("<img src='SUPlogo.png' width = '300px'></img>");
+        console.log(number);
+
+    } else { 
+        manyPicture();
+        console.log(number);
+    }
+   
+}
+manyPicture();
